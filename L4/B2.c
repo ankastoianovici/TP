@@ -13,7 +13,7 @@ int main()
 {
 	int n, i, *v, s;
 	printf("n=");
-	scanf("%d", &n;
+	scanf("%d", &n);
 	v = (int *)malloc(n * sizeof(int));
 	for (i = 0; i < n; i++)
 	{
