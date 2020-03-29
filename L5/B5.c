@@ -76,7 +76,7 @@ int Prim(int n)
 			return 0;
 	return 1;
 }
-int binar(int n)
+int Binar(int n)
 { 
 	int b = 2, x = 0, p = 1;
 	while (n != 0)
@@ -89,7 +89,7 @@ int binar(int n)
 }
 int main()
 {
-	int i, n, k = 0, b[8] = { 0 };
+	int i, n, B = 0, b[8] = { 0 };
     printf("n=");
 	scanf("%d", &n);
 	for (i = 0; i <= n; i++)
@@ -100,8 +100,8 @@ int main()
 		if (Prim(i) == 1)
 		{
 			Pop();
-			k = binar(i);
-			Push_(k);
+			B = Binar(i);
+			Push_(B);
 		}
 	}
 		print();
