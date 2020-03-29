@@ -1,9 +1,9 @@
-/*Sa se introduca într-o stiva toate numerele naturale pâna la
+/*Sa se introduca Ã®ntr-o stiva toate numerele naturale pÃ¢na la
 50. Din prima stiva se vor elimina numerele prime si se vor
-adauga într-o a doua stiva sub forma binara.
-A) Sa se adauge în stiva toate numerele naturale pâna la 50.
+adauga Ã®ntr-o a doua stiva sub forma binara.
+A) Sa se adauge Ã®n stiva toate numerele naturale pÃ¢na la 50.
 B) Sa se scoata din prima stiva numerele prime.
-C) Transformarea numerelor prime în baza 2. (sub forma
+C) Transformarea numerelor prime Ã®n baza 2. (sub forma
 finala)
 D) Sa se populeze a doua stiva cu forma binara.
 ! Atentie la refacerea primei stive !*/
@@ -44,11 +44,6 @@ int Pop()
 	else
 		return st[vf--];
 }
-/*int Peek()
-{
-	return st[vf];
-}*/
-
 void Print()
 {
 	int i;
@@ -71,18 +66,6 @@ void Print_()
 		printf("%d ", st2[i]);
 	printf("\n");
 }
-/*int IsEmpty()
-{
-	if (vf == -1)
-		return 1;
-	return 0;
-}
-int Full()
-{
-	if (vf == max - 1)
-		return 1;
-	return 0;
-}*/
 int Prim(int n)
 {
 	int i;
@@ -94,17 +77,7 @@ int Prim(int n)
 	return 1;
 }
 int binar(int n)
-{  
-	/*int k = 0, i, b[8] = { 0 };
-		while (n != 0)
-		{
-			b[k++] = n % 2;
-			n = n / 2;
-		}
-		for (i = 7; i >= 0; i--)
-			//printf("%d", b[i]);
-		//printf("\n");
-			return b[i];*/
+{ 
 	int b = 2, x = 0, p = 1;
 	while (n != 0)
 	{
@@ -136,6 +109,5 @@ int main()
 		Print_();
 	system("pause");
 	return 0;
-
 }
 
