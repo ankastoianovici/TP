@@ -90,7 +90,7 @@ int Binar(int n)
 int main()
 {
 	int i, n;
-    printf("n=");
+        printf("n=");
 	scanf("%d", &n);
 	for (i = 0; i <= n; i++)
 	{
