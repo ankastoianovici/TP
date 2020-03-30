@@ -89,7 +89,7 @@ int Binar(int n)
 }
 int main()
 {
-	int i, n, B = 0, b[8] = { 0 };
+	int i, n;
     printf("n=");
 	scanf("%d", &n);
 	for (i = 0; i <= n; i++)
@@ -100,8 +100,7 @@ int main()
 		if (Prim(i) == 1)
 		{
 			Pop();
-			B = Binar(i);
-			Push_(B);
+			Push_(Binar(i));
 		}
 	}
 		print();
