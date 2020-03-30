@@ -11,7 +11,6 @@ Input: 27
 #define max 100
 int st[max];
 int vf = -1;
-
 void Push(int val)
 {
 	if (vf == max - 1)
@@ -33,7 +32,7 @@ void Print()
 		printf("%d ", st[i]);
 	printf("\n");
 }
-int binar(int n)
+int Binar(int n)
 {
 	int k = 0, i, b[8] = { 0 };
 	while (n != 0)
@@ -46,14 +45,14 @@ int binar(int n)
 	printf("\n");
 }
 
-int invers(int n)
+int Invers(int n)
 {
 	n = 0xff - n;
 	return n;
 }
 int main()
 {
-	int n,i,x,j,b[8];
+	int n,i,x;
 	printf("x=");
 	scanf("%d", &x);
 	for (i = 0; i < x; i++)
@@ -62,7 +61,7 @@ int main()
 		scanf("%d", &n);
 		binar(n);
 		printf("\n");
-		Print(); Push(binar(invers(n)));
+		Print(); Push(Binar(Invers(n)));
 	}
 	system("pause");
 	return 0;
