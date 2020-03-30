@@ -48,26 +48,8 @@ int binar(int n)
 
 int invers(int n)
 {
-	int res = 0, inv = 0;
 	n = 0xff - n;
-	for (int x = 7; x > 0; x--)
-	{
-		res = res | (n & 0x01);
-		n = n >> 1;
-		res = res << 1;
-	}
-	res = res | (n & 0x01);
-	return res;
-}
-int opus(int n)
-{
-	int o = 0;
-	while (n != 0)
-	{
-		o = o * 10 + n % 10;
-		n = n / 10;
-	}
-	printf("%d", o);
+	return n;
 }
 int main()
 {
@@ -79,10 +61,8 @@ int main()
 		printf("n=");
 		scanf("%d", &n);
 		binar(n);
-		// binar(invers(n));
 		printf("\n");
-		//Print(); 
-		Print(); Push(opus(binar(invers(n))));
+		Print(); Push(binar(invers(n)));
 	}
 	system("pause");
 	return 0;
