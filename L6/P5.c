@@ -1,5 +1,5 @@
-/*5. Se da un set de valori “W”.Sa se scrie la sfarsit toate combinatiile a elementelor din setul respectiv
-care sa dea suma “S” fara a se repeta valorile din W.
+/*5. Se da un set de valori â€œWâ€.Sa se scrie la sfarsit toate combinatiile a elementelor din setul respectiv
+care sa dea suma â€œSâ€ fara a se repeta valorile din W.
 Input:
 W = { 1, 3, 5, 6, 7 }
 S = 12
@@ -12,7 +12,10 @@ Output :
 int x[100], w[100], suma, n;
 int valid(int i, int nr, int s) 
 {
-	return(((nr + s) >= suma) && ((nr == suma) || (nr + w[i + 1] <= suma)));
+	if(((nr + s) >= suma) && ((nr == suma) || (nr + w[i + 1] <= suma))==1)
+		return 1;
+	else
+		return 0;
 }
 int Bkt(int i, int nr, int s) 
 {
