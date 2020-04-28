@@ -1,3 +1,5 @@
+//NU E COMPLETA
+
 /*Sa se implementeze calculul de factorial sub urmatoarea forma:
 - Functie “tail-recursive”
 - Functie “ non-tailed-recursive”
