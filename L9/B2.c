@@ -8,18 +8,18 @@ void Interschimba(char *x, char *y)
 	*x = *y;
 	*y = aux;
 }
-void Permutare(char *s, int l, int r)
+void Permutare(char *s, int i, int j)
 {
-	int i;
-	if (l == r)
+	int k;
+	if (i == j)
 		printf("%s\n", s);
 	else
 	{
-		for (i = l; i <= r; i++)
+		for (k = i; k <= j; k++)
 		{
-			Interschimba((s + l), (s + i));
-			Permutare(s, l + 1, r);
-			Interschimba((s + l), (s + i)); 
+			Interschimba((s + i), (s + k));
+			Permutare(s, i + 1, j);
+			Interschimba((s + i), (s + k)); 
 		}
 	}
 }
